@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giá Vàng Hôm Nay</title>
+  <!-- CSS - mỗi file 1 phần -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/background.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/chart.css">
+  <link rel="stylesheet" href="css/price-card.css">
+  <link rel="stylesheet" href="css/table.css">
+  <link rel="stylesheet" href="css/ticker.css">
+</head>
+<body>
+  <!-- Header: Clock + Title -->
+  <header id="header">
+    <div class="clock-box" id="clock-box">
+      <span class="time" id="clock-time">00:00</span>
+      <span class="time-suffix" id="clock-suffix">AM</span>
+    </div>
+    <div class="header-title">
+      VND/USD, chưa tính thuế phí
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Left: Candlestick Chart -->
+    <section class="chart-section">
+      <canvas id="candlestick-chart"></canvas>
+    </section>
+
+    <!-- Right: Price Card + Mini Chart -->
+    <aside class="sidebar">
+      <div class="price-card" id="price-card">
+        <div class="price-main">
+          <span class="price-value" id="price-value">4,444.575</span>
+          <span class="price-unit">USD/OUNCE</span>
+        </div>
+        <div class="price-change negative" id="price-change">
+          -1.38% (62.27)
+        </div>
+        <div class="price-range">
+          <span class="range-label">PHẠM VI NGÀY</span>
+          <div class="range-bar">
+            <span class="range-low" id="range-low">4,415...</span>
+            <div class="range-track">
+              <div class="range-fill" id="range-fill"></div>
+            </div>
+            <span class="range-high" id="range-high">4,544...</span>
+          </div>
+        </div>
+        <div class="price-secondary">
+          <span class="secondary-value" id="secondary-value">168.500</span>
+          <span class="secondary-unit">Tr.VND/Lượng</span>
+          <span class="secondary-label">SJC</span>
+        </div>
+      </div>
+
+      <div class="mini-chart-container">
+        <h3 class="mini-chart-title">Giá vàng SJC (triệu VND/lượng) 30 ngày qua</h3>
+        <canvas id="mini-chart"></canvas>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Gold Price Banner -->
+  <div class="banner" id="banner">
+    <h2 class="banner-text" id="banner-text">GIÁ VÀNG CHIỀU NAY 26/03/2026</h2>
+  </div>
+
+  <!-- Price Table -->
+  <section class="table-section">
+    <table class="price-table" id="price-table">
+      <thead>
+        <tr>
+          <th>LOẠI VÀNG</th>
+          <th>MUA VÀO(Đ/L)</th>
+          <th>BÁN RA (Đ/L)</th>
+          <th>C.LỆCH</th>
+        </tr>
+      </thead>
+      <tbody id="price-table-body">
+        <!-- Rendered by JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Bottom Ticker - Giá -->
+  <div class="ticker-bar" id="ticker-bar">
+    <div class="ticker-content" id="ticker-content">
+      <!-- Rendered by JS -->
+    </div>
+  </div>
+
+  <!-- News Bar - Tin tức -->
+  <div class="news-bar" id="news-bar">
+    <div class="news-label">TIN TỨC</div>
+    <div class="news-scroll">
+      <div class="news-content" id="news-content">
+        <span class="news-item"><span class="news-title">Đang tải tin tức...</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS - mỗi file 1 chức năng -->
+  <script src="data/goldData.js"></script>
+  <script src="data/sjcData.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/candlestickChart.js"></script>
+  <script src="js/miniChart.js"></script>
+  <script src="js/priceCard.js"></script>
+  <script src="js/table.js"></script>
+  <script src="js/ticker.js"></script>
+  <script src="js/news.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

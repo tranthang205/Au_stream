@@ -1,0 +1,101 @@
+/* Banner */
+.banner {
+  background: #ffdd00;
+  text-align: center;
+  padding: 2px 0;
+  flex-shrink: 0;
+}
+
+.banner-text {
+  font-size: 20px;
+  font-weight: 900;
+  color: #cc0000;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Price Table */
+.table-section {
+  padding: 0;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.price-table thead tr {
+  background: #cc0000;
+  color: #ffdd00;
+}
+
+.price-table th {
+  padding: 2px 12px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.price-table th:nth-child(2),
+.price-table th:nth-child(3) {
+  text-align: center;
+}
+
+.price-table th:nth-child(4) {
+  text-align: center;
+}
+
+.price-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.price-table tbody tr:nth-child(odd) {
+  background: #fff3e0;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background: #ffe0b2;
+}
+
+.price-table td {
+  padding: 2px 12px;
+  color: #111;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.price-table td:first-child {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.price-table td:nth-child(2),
+.price-table td:nth-child(3) {
+  text-align: center;
+  font-size: 13px;
+}
+
+.price-table td:nth-child(4) {
+  text-align: center;
+  font-weight: bold;
+}
+
+.price-down {
+  color: #cc0000;
+  font-weight: bold;
+}
+
+.price-up {
+  color: #006600;
+  font-weight: bold;
+}
+
+.arrow-down::before {
+  content: "↓ ";
+  color: #cc0000;
+}
+
+.arrow-up::before {
+  content: "↑ ";
+  color: #006600;
+}

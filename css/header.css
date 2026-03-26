@@ -1,0 +1,39 @@
+/* Header */
+#header {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: #0d0d1a;
+  border-bottom: 1px solid #333;
+}
+
+.clock-box {
+  background: #000;
+  border: 2px solid #ffd700;
+  padding: 4px 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-right: 16px;
+}
+
+.clock-box .time {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+.clock-box .time-suffix {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+}
+
+.header-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #ff4444;
+  text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+}

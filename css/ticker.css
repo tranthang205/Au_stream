@@ -1,0 +1,130 @@
+/* Ticker Bar - Giá */
+.ticker-bar {
+  background: #0d0d1a;
+  border-top: 2px solid #333;
+  overflow: hidden;
+  height: 26px;
+  min-height: 26px;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.ticker-content {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  white-space: nowrap;
+  animation: tickerScroll 30s linear infinite;
+}
+
+@keyframes tickerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.ticker-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ticker-item .ticker-name {
+  color: #ffd700;
+}
+
+.ticker-item .ticker-price {
+  color: #fff;
+}
+
+.ticker-item .ticker-change.positive {
+  color: #00cc00;
+}
+
+.ticker-item .ticker-change.negative {
+  color: #ff4444;
+}
+
+.ticker-separator {
+  color: #555;
+  padding: 0 8px;
+}
+
+/* News Bar - Tin tức */
+.news-bar {
+  background: linear-gradient(90deg, #1a0a0a, #0d0d1a);
+  border-top: 1px solid #333;
+  overflow: hidden;
+  height: 24px;
+  min-height: 24px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.news-label {
+  background: #cc0000;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 10px;
+  white-space: nowrap;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.news-scroll {
+  flex: 1 1 0%;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.news-content {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  white-space: nowrap;
+  animation: newsScroll 45s linear infinite;
+}
+
+@keyframes newsScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.news-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px;
+  font-size: 12px;
+}
+
+.news-time {
+  color: #ffd700;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+.news-title {
+  color: #eee;
+  font-weight: 500;
+}
+
+.news-source {
+  color: #888;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.news-dot {
+  color: #cc0000;
+  font-size: 6px;
+  padding: 0 4px;
+}

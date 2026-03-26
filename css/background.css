@@ -1,0 +1,59 @@
+/*
+ * background.css - Nền và màu tổng thể
+ * Lỗi nền / màu sắc tổng thể → sửa file này
+ */
+
+/* Nền chính */
+body {
+  background: #1a1a2e;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(16, 36, 69, 0.4) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(30, 15, 60, 0.3) 0%, transparent 50%);
+  color: #fff;
+}
+
+/* Nền header */
+#header {
+  background: linear-gradient(180deg, #0d0d1a 0%, #111128 100%);
+  border-bottom: 1px solid #333;
+}
+
+/* Nền biểu đồ nến */
+.chart-section {
+  background: #111;
+  border: 1px solid #333;
+}
+
+/* Nền price card */
+.price-card {
+  background: linear-gradient(135deg, #f9f9f9 0%, #eee 100%);
+}
+
+/* Nền mini chart */
+.mini-chart-container {
+  background: #f5f5f5;
+}
+
+/* Nền banner */
+.banner {
+  background: linear-gradient(90deg, #ffdd00 0%, #ffc800 50%, #ffdd00 100%);
+}
+
+/* Nền bảng giá */
+.price-table thead tr {
+  background: linear-gradient(90deg, #cc0000 0%, #aa0000 100%);
+}
+
+.price-table tbody tr:nth-child(odd) {
+  background: #fff3e0;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background: #ffe0b2;
+}
+
+/* Nền ticker */
+.ticker-bar {
+  background: linear-gradient(180deg, #0d0d1a 0%, #060612 100%);
+  border-top: 2px solid #333;
+}
